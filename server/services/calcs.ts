@@ -24,5 +24,4 @@ function sieveOfEratosthenes(n: number) {
   return result;
 }
 
-// module.exports = { sieveOfEratosthenes };
 export default { sieveOfEratosthenes };

@@ -1,8 +1,5 @@
 require("dotenv").config();
-// const express = require("express");
-// const cors = require("cors");
 import cors from 'cors';
-// const calcs = require("./services/calcs");
 import calcs from "./services/calcs";
 import express, { Request, Response } from 'express';
 
