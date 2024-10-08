@@ -3,18 +3,15 @@ import pluginJs from "@eslint/js";
 import tseslint from "typescript-eslint";
 import pluginReact from "eslint-plugin-react";
 
-
 export default [
-  {files: ["**/*.{js,mjs,cjs,ts,jsx,tsx}"]},
-  {languageOptions: { globals: globals.browser }},
+  { files: ["**/*.{js,mjs,cjs,ts,jsx,tsx}"] },
+  { languageOptions: { globals: globals.browser } },
   {
-    "plugins": [
-      "react"
-    ],
-    "rules": {
+    plugins: ["react", "react-hooks", "import", "testing-library", "jest-dom"],
+    rules: {
       "react/jsx-uses-react": "off",
-      "react/react-in-jsx-scope": "off"
-    }
+      "react/react-in-jsx-scope": "off",
+    },
   },
   pluginJs.configs.recommended,
   ...tseslint.configs.recommended,
