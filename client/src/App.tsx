@@ -31,7 +31,6 @@ const App = () => {
   };
 
   useEffect(() => {
-    // setUpperLimit(25);
     fetchMedianPrimes();
   }, [upperLimit]);
 
