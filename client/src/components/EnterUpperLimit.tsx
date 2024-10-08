@@ -12,6 +12,9 @@ const EnterUpperLimit = ({
       e.target.value = "0";
       setUpperLimit(0);
     } else {
+      if (e.target.value[0] === "0") {
+        e.target.value = e.target.value.slice(1);
+      }
       setUpperLimit(+e.target.value);
     }
   };

@@ -14,14 +14,14 @@ const Result = ({ upperLimit, medianPrimesArray }: ResultProps) => {
     return (
       <h2>
         The median prime number for an upper limit of {upperLimit} is{" "}
-        {medianPrimesArray[0]}
+        {medianPrimesArray[0]}.
       </h2>
     );
   } else {
     return (
       <h2>
         The median prime numbers for an upper limit of {upperLimit} are{" "}
-        {medianPrimesArray[0]} and {medianPrimesArray[1]}
+        {medianPrimesArray[0]} and {medianPrimesArray[1]}.
       </h2>
     );
   }
