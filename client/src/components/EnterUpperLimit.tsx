@@ -1,15 +1,20 @@
-// import { useState } from "react";
-// import { ProductEntry } from "../../types";
-
 interface EnterUpperLimitProps {
-  upperLimit: number,
+  upperLimit: number;
   setUpperLimit: React.Dispatch<React.SetStateAction<number>>;
 }
 
-const EnterUpperLimit = ({setUpperLimit, upperLimit} : EnterUpperLimitProps) => {
-
-  const handleOnChange = (e: React.ChangeEvent<HTMLInputElement>) => { 
-  setUpperLimit(+e.target.value);}
+const EnterUpperLimit = ({
+  setUpperLimit,
+  upperLimit,
+}: EnterUpperLimitProps) => {
+  const handleOnChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    if (e.target.value.length === 0) {
+      e.target.value = "0";
+      setUpperLimit(0);
+    } else {
+      setUpperLimit(+e.target.value);
+    }
+  };
 
   return (
     <form>
@@ -22,7 +27,6 @@ const EnterUpperLimit = ({setUpperLimit, upperLimit} : EnterUpperLimitProps) => 
           min="0"
           value={upperLimit}
           onChange={handleOnChange}
-          required
         />
       </div>
     </form>
