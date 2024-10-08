@@ -21,8 +21,11 @@ const EnterUpperLimit = ({
 
   return (
     <form>
-      <div className="w-full max-w-lg mb-12">
-        <label htmlFor="upper-limit-num" className="w-full max-w-lg mb-12">
+      <div className="w-full max-w-4xl mb-12 flex flex-col items-center">
+        <label
+          htmlFor="upper-limit-num"
+          className="w-full max-w-xl mb-4 text-center"
+        >
           Enter upper limit number:{" "}
         </label>
         <input
@@ -40,9 +43,3 @@ const EnterUpperLimit = ({
 };
 
 export default EnterUpperLimit;
-
-// {/* Input Field */}
-// <div className="w-full max-w-lg mb-12">
-//   <label htmlFor="upperLimit" className="w-full max-w-lg mb-12">
-//     Enter an upper limit
-//   </label>

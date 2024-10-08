@@ -16,8 +16,8 @@ const Result = ({ upperLimit, medianPrimesArray }: ResultProps) => {
   }
 
   return (
-    <div className="w-full max-w-lg">
-      <p className="text-xl">{outputText}</p>
+    <div className="w-full max-w-2xl">
+      <p className="text-xl text-center">{outputText}</p>
     </div>
   );
 };

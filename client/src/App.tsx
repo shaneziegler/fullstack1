@@ -40,16 +40,15 @@ const App = () => {
 
   return (
     <ErrorBoundary fallback={<FourOhFour />}>
-      <div id="app" className="min-h-screen flex flex-col">
+      <div id="app" className="w-full min-h-screen flex flex-col">
         <Header />
 
-        {/* Main Content */}
         <main className="flex-grow flex flex-col items-center justify-center px-6">
-          {/* Input Field */}
           <EnterUpperLimit
             setUpperLimit={setUpperLimit}
             upperLimit={upperLimit}
           />
+
           <Result medianPrimesArray={medianPrimes} upperLimit={upperLimit} />
         </main>
       </div>
