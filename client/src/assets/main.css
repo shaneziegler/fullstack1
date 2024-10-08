@@ -1,9 +1,13 @@
 @import url("./whitespace-reset.css");
 @import url("https://fonts.googleapis.com/css?family=Rammetto+One%7CRoboto+Condensed");
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
 
 body {
   font-family: "Roboto Condensed", sans-serif;
   font-size: 16px;
+  /* @apply bg-black text-white; */
 }
 
 #app {
