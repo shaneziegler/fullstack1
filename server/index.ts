@@ -1,4 +1,3 @@
-// require("dotenv").config();
 import "dotenv/config.js";
 import app from "./app";
 

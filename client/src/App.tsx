@@ -48,7 +48,6 @@ const App = () => {
         />
         <Result medianPrimesArray={medianPrimes} upperLimit={upperLimit} />
       </div>
-      //{" "}
     </ErrorBoundary>
   );
 };

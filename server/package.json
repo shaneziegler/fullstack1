@@ -2,7 +2,7 @@
   "name": "fullstack1-server",
   "version": "1.0.0",
   "description": "Fullstack1 Server Backend",
-  "main": "server.js",
+  "main": "index.ts",
   "scripts": {
     "start": "NODE_ENV=production node server.js",
     "devjs": "NODE_ENV=development nodemon server.js",
